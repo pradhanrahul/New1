@@ -1,0 +1,14 @@
+#btn1{
+    background: red;
+    background-size: 20%;
+}
+#btn2{
+    background: green;
+}
+#btn3{
+    background: blue;
+}
+.container{
+  
+border-color: black;
+}
