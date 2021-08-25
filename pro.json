@@ -1,0 +1,9 @@
+{
+    "pets":[
+        {"name":"dog","age":5,"weight":30},
+        {"name":"cow","age":10,"weight":200},
+        {"name":"cat","age":3,"weight":6},
+        {"name":"horse","age":20,"weight":150},
+        {"name":"goat","age":2,"weight":30}
+        ]
+}
