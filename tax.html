@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="main_contain">
+            <div class="box">
+                <label for="">Enter price</label>
+                <input type="text" id="txt">
+            </div>
+
+            <div class="box">
+                <label for="">Enter Quantity</label>
+                <input type="text" id="txt2">
+            </div>
+
+            <div class="box">
+                <label for="">Enter tax</label>
+                <input type="text" id="txt3">
+            </div>
+
+            <div class="box">
+                <label for="">Total calculate</label>
+                <input type="text" id="txt4">
+            </div>
+
+            <div class="box">
+               <button id="btn">get result</button>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        function totalP()
+        {
+            var price=parseInt(document.getElementById("txt").value)
+            var Quantity=parseInt(document.getElementById("txt2").value)
+            var tax=parseInt(document.getElementById("txt3").value)
+            var multipt=parseInt(price*Quantity)
+            var result=multipt*tax/100
+            document.getElementById("txt4").value=result
+        }
+        document.getElementById("btn").addEventListener("click",totalP)
+    </script>
+</body>
+</html>
