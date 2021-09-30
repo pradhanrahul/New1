@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div{
+     #box1{
             
             height: 800px;
             width: 90%;
             border: 2px solid black;
         }
-        #box1{
+         #box2{
             height: 240px;
             width: 20%;
             border: 2px solid black;
@@ -20,20 +21,17 @@
             margin-bottom: 30px;
             margin-left: 40px;
             float:left;
-           
-        }
-        #box2{
+         }
+          #box3{
             height: 240px;
             width: 20%;
             border: 2px solid black;
-            margin-top: 10px;
+            margin-top: 39px;
             margin-bottom: 30px;
-            margin-right: 10px;
-            margin: 40px;
-             float:left;
-             
-        }
-        #box3{
+            margin-left: 40px;
+            float:left;
+            }
+               #box4{
             height: 240px;
             width: 15%;
             border: 2px solid black;
@@ -41,181 +39,129 @@
             margin-bottom: 39px;
             margin-right: 230px;
             float:right;
-             
-        }
-        #box4{
-            height: 300px;
+               }
+                 #box5{
+            height: 280px;
             width: 40%;
             border: 2px solid black;
             margin-top: 380px;
             margin-bottom: 39px;
             margin-left: 40px;
+          
+                 }
+                   #btn{
+            float:right;
+            margin-right: 230px;
+            margin-bottom: 80px;
+             float:right;
+          
+        }
+        #clr{
+            float:right;
+            margin-right: 230px;
+            margin-bottom: 80px;
+            float:right;
+          
+        }
            
              
-        }
-        #btn1{
-            float:right;
-            margin-right: 230px;
-            margin-bottom: 80px;
-        }
-        #btn2{
-            float:right;
-            margin-right: 230px;
-            margin-bottom: 80px;
-        }
-        
-        
+           
+           
     </style>
+
 </head>
-<script>
-     var lunchName = "";
-            var dinnerName = "";
-            var lunchCost = 0;
-            var dinnerCost = 0;
-function getValue(){
-    var item=[]
-    var  PIZA=document.getElementById("checkbox1")
-    if(PIZA.checked){
-        
-        item.push(PIZA.value);
-        dinnerName = PIZA.value;
-                dinnerCost = 120;
 
-        
-    }
-    var  BURGER=document.getElementById("checkbox2")
-    if(BURGER.checked){
-        item.push(BURGER.value)
-        dinnerName = BURGER.value;
-                dinnerCost = 90;
-    }
-    var  ROLE=document.getElementById("checkbox3")
-    if(ROLE.checked){
-        item.push(ROLE.value)
-        dinnerName = ROLE.value;
-                dinnerCost =50;
-    }
-    var  MAGGI=document.getElementById("checkbox4")
-    if(MAGGI.checked){
-        item.push(MAGGI.value)
-        dinnerName = MAGGI.value;
-                dinnerCost = 40;
-    }
-    var  SAMOSA=document.getElementById("checkbox5")
-    if(SAMOSA.checked){
-        item.push(SAMOSA.value)
-        dinnerName = SAMOSA.value;
-                dinnerCost = 20;
-    }
-    var  RICE=document.getElementById("checkbox6")
-    if(RICE.checked){
-        item.push(RICE.value)
-        dinnerName = RICE.value;
-                lunchCost = 30;
-                lunchCost=lunchCost+dinnerCost;
-    }
-    var  DAL=document.getElementById("checkbox7")
-    if(DAL.checked){
-        item.push(DAL.value)
-        dinnerName = DAL.value;
-                lunchCost = 10;
-                lunchCost=lunchCost+dinnerCost;
-
-    }
-    var  CURRY=document.getElementById("checkbox8")
-    if(CURRY.checked){
-        item.push(CURRY.value)
-        dinnerName = CURRY.value;
-                lunchCost = 30;
-                lunchCost=lunchCost+dinnerCost;
-
-    }
-    var  BIRIYANI=document.getElementById("checkbox9")
-    if(BIRIYANI.checked){
-        item.push(BIRIYANI.value)
-        dinnerName = BIRIYANI.value;
-                lunchCost = 100;
-                lunchCost=lunchCost+dinnerCost;
-
-    }
-    var  PAMPADA=document.getElementById("checkboxa")
-    if(PAMPADA.checked){
-        item.push(PAMPADA.value)
-        dinnerName = PAMPADA.value;
-                lunchCost = 5;
-                lunchCost=lunchCost+dinnerCost;
-
-    }
-    var  COLDRINKS=document.getElementById("checkboxb")
-    if(COLDRINKS.checked){
-        item.push(COLDRINKS.value)
-        dinnerName = COLDRINKS.value;
-                dinnerCost = 0;
-    }
-    var  LASSI=document.getElementById("checkboxc")
-    if(LASSI.checked){
-        item.push(LASSI.value)
-        dinnerName = LASSI.value;
-                dinnerCost = 0;
-    }
-    document.getElementById("box4").innerHTML = "Total cost :" + "&#8377;" + lunchCost + "/-";
-
-    
-    if(item.length>0){
-        document.getElementById("box4").innerHTML=item;
-
-    }
-    else{
-        document.getElementById("p1").innerHTML="you have dont anything"
-    }
-    function clear(){
-document.getElementById("box4").reset();
-    }
-
-}
-// var mylist=document.getElementById("myList");
-// document.getElementById("item").value=mylist
-
-
-
-</script>
 <body>
-    <table>
-<div>
-    <div id="box1">
-        <input type="checkbox" id="checkbox1" name="lunch" value="PIZA"> PIZA<br>
-        <input type="checkbox"  id="checkbox2" name="lunch" value="BURGER"> BURGER<br>
+<div id="box1">
+    <label> </label>
+    <div id="box2">
 
-        <input type="checkbox"  id="checkbox3" name="lunch" value="ROLE"> ROLE<br>
-
-        <input type="checkbox"id="checkbox4" name="lunch" value="MAGGI"> MAGGI<br>
-
-        <input type="checkbox"  id="checkbox5" name="lunch" value="SAMOSA"> SAMOSA
-
-            </div>
-    <div id="box2"> 
-        <input type="checkbox"   id="checkbox6" name="lunch" value="RICE"> RICE<br>
-        <input type="checkbox"   id="checkbox7"name="lunch" value="DAL"> DAL<br>
-
-        <input type="checkbox" id="checkbox8" name="lunch" value="CURRY"> CURRY<br>
-
-        <input type="checkbox"   id="checkbox9" name="lunch" value="BIRIYANI"> BIRIYANI<br>
-
-        <input type="checkbox"    id="checkboxa"name="lunch" value="PAMPADA"> PAMOADA
-</div>
-    <div id="box3">
-        <input type="checkbox"   id="checkboxb"name="lunch" value="COLDRINKS"> COLDRINKS<br>
-        <input type="checkbox"  id="checkboxc" name="lunch" value="LASSI"> LASSI<br>
-
-       
+        <select name="lunch" id="lunch1" onclick="fill(this)" multiple>
+            <option value="Pizza">Pizza</option>
+            <option value="Burger">Burger</option>
+            <option value="Paratha">Paratha</option>
+            <option value="Dosa">Dosa</option>
+            <option value="Itly">Itly</option>
+            <option value="Poha">Poha</option>
+        </select>
     </div>
+    <label> </label>
+    <div id="box3">
+
+        <select name="dinner" id="dinner1" onclick="fill(this)" multiple>
+            <option value="Dal">Dal</option>
+            <option value="Rice">Rice</option>
+            <option value="Dalmakhni">Dalmakhni</option>
+            <option value="Paneer">Paneer</option>
+            <option value="Roti">Roti</option>
+            <option value="Razma">Razma</option>
+        </select>
+
+    </div>
+    <label> </label>
     <div id="box4">
-      
+
+        <select name="choice" id="choice1" onclick="fill(this)">
+            <option value="Colddrink">Colddrink</option>
+            <option value="Lassi">Lassi</option>
+        </select>
+
+    </div>
+    <div>
+        <div id="box5"></div>
+        <div id="box6"></div>
         </div>
-        <button id="btn" onclick="getValue()">Total Cost</button>
-<button   onclick="clear()">Clear </button>
-<p id="p1"></p>
-</div>
-   </table>
+    
+
+    <button id="btn" click="load()">total</button>
+    <button id="clr" click="reset()">clear</button>
+    <div id="res"></div>
+    <div id="total"></div><br>
+  
+
 </body>
-</html> 
+<script>
+    var data = [];
+    function fill(add) {
+        data.push(document.getElementById(add.id).value);
+        //console.log(data);
+    }
+    function load() {
+        var total = 0;
+        for (let index = 0; index < data.length; index++) {
+            const element = data[index];
+            document.getElementById("res").innerHTML += element + "<br\>"
+
+        }
+        
+   
+        for (let i = 0; i < data.length; i++) {
+            if (data[i] == "Razma" || data[i] == "Dalmakhni")
+                total += 60;
+            else if (data[i] == "Dal" || data[i] == "Poha")
+                total += 40;
+            else if (data[i] == "Rice" || data[i] == "Roti")
+                total += 30;
+            else if (data[i] == "Paneer" || data[i] == "Dosa")
+                total += 90;
+            else if (data[i] == "Itly" || data[i] == "Pizza")
+                total += 45;
+            else if (data[i] == "Burger" || data[i] == "Paratha")
+                total += 30;
+            else if (data[i] == "Colddrink" || data[i] == "Lassi")
+                total += 50;
+        }
+
+        document.getElementById("box5").innerHTML = "Total Cost: " + total
+    }
+   
+    function reset() {
+        document.getElementById("box5").innerHTML = ""
+        document.getElementById("total").innerHTML = ""
+    }
+    document.getElementById("btn").addEventListener("click", load);
+    document.getElementById("clr").addEventListener("click", reset);
+</script>
+</div>
+
+</html>
