@@ -1,0 +1,167 @@
+.main{
+    height:600px;
+    width:960px;
+    background:none;
+    margin: auto;
+    border: 1px solid black;
+}
+.header{
+    height: 30px;
+    width:100% ;
+    background-color: aquamarine;
+    float: left;
+    margin-top: 20px;
+}
+.b{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.box-dinner{
+    height:200px;
+    width:300px;
+    background-color: rgb(192, 202, 195);
+    float: left;
+    border: 1px solid black;
+    margin-left: 13px;
+    margin-top: 10px;
+}
+.box-lunch{
+    height:200px;
+    width:300px;
+    background-color: rgb(192, 202, 195);
+    float: left;
+    border: 1px solid black;
+    margin-left: 13px;
+    margin-top: 10px;
+}
+.box-gift{
+    height:200px;
+    width:300px;
+    background-color: rgb(192, 202, 195);
+    float: left;
+    border: 1px solid black;
+    margin-left: 13px;
+    margin-top: 10px;
+}
+.text{
+    color: white;
+    font-size: 20px;
+    letter-spacing: 3px;
+    padding: 10px 10px;
+    background-color: rgba(1, 22, 66, 0.945);
+    margin-top: 0px;
+}
+.lab{
+    font-size: 20px;
+    color:rgb(248, 58, 58);
+    margin-left: 15px;
+}
+
+.check-l{
+    float: right;
+ }
+
+.bill-box{
+    height: 300px;
+    width: 930px;
+    background-color: brown;
+    float: left;
+    margin-left: 13px;
+    margin-top: 15px;
+    border: 1px solid black;
+
+
+}
+
+.area{
+    width:40px;
+}
+
+.box-bill{
+    height:auto;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.048);
+    border: 1px solid black;
+    float: left;
+    margin-left: 20px;
+    margin-top: 18px;
+}
+.itbuy{
+    padding:7px 10px;
+    background-color:rgba(1, 22, 66, 0.945); ;
+    color:white;
+    margin-top: 0px;
+}
+.in{
+    width: 370px;
+    margin: auto;
+    margin-right: 5px;
+    float: right;
+    text-align: right;
+
+}
+
+
+.btn1{
+    padding:10px 40px;
+    background-color: cornsilk;
+    margin-top: 90px;
+    margin-left: 200px;
+}
+.btn2{
+    padding:10px 44px;
+    background-color: cornsilk;
+    margin-top: 30px;
+    margin-left: 200px;
+}
+
+
+.check{
+    margin-left: 75px;
+}
+.check1{
+    margin-left: 70px;
+}
+.check2{
+    margin-left: 59px;
+}
+.check3{
+    margin-left: 63px;
+}
+/* ................lunch......... */
+.lab-l{
+    font-size: 20px;
+    color:rgb(248, 58, 58);
+    margin-left: 15px;
+}
+
+.cp{
+    margin-left: 60px;
+}
+.cp1{
+    margin-left: 70px;
+}
+.cp2{
+    margin-left: 103px;
+}
+.cp3{
+    margin-left: 108px;
+}
+
+/* .......gift........ */
+
+.lab-g{
+    font-size: 20px;
+    color:rgb(248, 58, 58);
+    margin-left: 15px;
+}
+.pr{
+    float: right;  
+}
+
+.inp2{
+    margin-left: 110px;
+}
+.inp1{
+    margin-left:62px;
+}

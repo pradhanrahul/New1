@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="style.css" type="text/css" rel="stylesheet" media="all" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">
+        <center><samp class="b">Billing Assignment</samp></center>
+      </div>
+      <div class="box-dinner">
+        <p class="text">Dinner</p>
+
+        <form action="" id="theForm">
+		<lable class="lab">Plan Rice</lable>
+          <input
+            class="check"
+            name="product"
+            value="20"
+            type="checkbox"
+            id="p1"
+            onclick="totalIt()"
+          /><spam>Rs.20/-</spam><br />
+
+
+          <lable class="lab">Jeera Rice</lable>
+          <input
+            class="check1"
+            name="product"
+            value="30"
+            type="checkbox"
+            id="p2"
+            onclick="totalIt()"
+          /><spam>Rs.30/-</spam><br />
+
+          <lable class="lab">Rajma Rice</lable>
+          <input
+            class="check2"
+            name="product"
+            value="50"
+            type="checkbox"
+            id="p3"
+            onclick="totalIt()"
+          /><spam>Rs.50/-</spam><br />
+
+          <lable class="lab">Chole Rice</lable>
+          <input
+            class="check3"
+            name="product"
+            value="50"
+            type="checkbox"
+            id="p4"
+            onclick="totalIt()"
+          /><spam>Rs.50/-</spam><br />
+        </form>
+      </div>
+      <div class="box-lunch">
+        <p class="text">Lunch</p>
+        <form action="" id="theForm">
+          <lable class="lab-l">Onion Pizza</lable>
+          <input
+            class="cp"
+            name="product"
+            value="100"
+            type="checkbox"
+            id="p5"
+            onclick="totalIt()"
+          /><spam>Rs.100/-</spam><br />
+
+          <lable class="lab-l">Corn Pizza</lable>
+          <input
+            class="cp1"
+            name="product"
+            value="150"
+            type="checkbox"
+            id="p6"
+            onclick="totalIt()"
+          /><spam>Rs.150/-</spam><br />
+
+          <lable class="lab-l">Burger</lable>
+          <input
+            class="cp2"
+            name="product"
+            value="50"
+            type="checkbox"
+            id="p7"
+            onclick="totalIt()"
+          /><spam>Rs.50/-</spam><br />
+
+          <lable class="lab-l"> Coffie</lable>
+          <input
+            class="cp3"
+            name="product"
+            value="50"
+            type="checkbox"
+            id="p8"
+            onclick="totalIt()"
+          /><spam>Rs.50/-</spam><br />
+        </form>
+      </div>
+      <div class="box-gift">
+        <p class="text">Gift</p>
+        <form action="" id="theForm">
+          <lable class="lab-g">Cold Drink</lable>
+          <input
+            class="inp1"
+            name="product"
+            value="20"
+            type="checkbox"
+            id="p9"
+            onclick="totalIt()"
+          /><spam>Rs.20/-</spam><br />
+
+          <lable class="lab-g">Lassi</lable>
+          <input
+            class="inp2"
+            name="product"
+            value="30"
+            type="checkbox"
+            id="p9"
+            onclick="totalIt()"
+          /><spam>Rs.30/-</spam> <br />
+        </form>
+      </div>
+
+      <div class="bill-box">
+        <div class="box-bill">
+          <p class="itbuy">Totle Cost Item You Buy . . .</p>
+          <input
+            class="in"
+            value="0"
+            readonly="readonly"
+            type="text"
+            id="total"
+          />
+        </div>
+
+        <form action="" id="theForm">
+          <input
+            class="btn1"
+            value="Reset Bill"
+            type="submit"
+            id="d-total"
+          /><br />
+          <!-- <input class="btn2" value="Reset" type="reset"/> -->
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
