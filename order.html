@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            
+            height: 800px;
+            width: 90%;
+            border: 2px solid black;
+        }
+        #box1{
+            height: 240px;
+            width: 20%;
+            border: 2px solid black;
+            margin-top: 39px;
+            margin-bottom: 30px;
+            margin-left: 40px;
+            float:left;
+           
+        }
+        #box2{
+            height: 240px;
+            width: 20%;
+            border: 2px solid black;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            margin-right: 10px;
+            margin: 40px;
+             float:left;
+             
+        }
+        #box3{
+            height: 240px;
+            width: 15%;
+            border: 2px solid black;
+            margin-top: 30px;
+            margin-bottom: 39px;
+            margin-right: 230px;
+            float:right;
+             
+        }
+        #box4{
+            height: 300px;
+            width: 40%;
+            border: 2px solid black;
+            margin-top: 380px;
+            margin-bottom: 39px;
+            margin-left: 40px;
+           
+             
+        }
+        #btn1{
+            float:right;
+            margin-right: 230px;
+            margin-bottom: 80px;
+        }
+        #btn2{
+            float:right;
+            margin-right: 230px;
+            margin-bottom: 80px;
+        }
+        
+        
+    </style>
+</head>
+<script>
+     var lunchName = "";
+            var dinnerName = "";
+            var lunchCost = 0;
+            var dinnerCost = 0;
+function getValue(){
+    var item=[]
+    var  PIZA=document.getElementById("checkbox1")
+    if(PIZA.checked){
+        
+        item.push(PIZA.value);
+        dinnerName = PIZA.value;
+                dinnerCost = 120;
+
+        
+    }
+    var  BURGER=document.getElementById("checkbox2")
+    if(BURGER.checked){
+        item.push(BURGER.value)
+        dinnerName = BURGER.value;
+                dinnerCost = 90;
+    }
+    var  ROLE=document.getElementById("checkbox3")
+    if(ROLE.checked){
+        item.push(ROLE.value)
+        dinnerName = ROLE.value;
+                dinnerCost =50;
+    }
+    var  MAGGI=document.getElementById("checkbox4")
+    if(MAGGI.checked){
+        item.push(MAGGI.value)
+        dinnerName = MAGGI.value;
+                dinnerCost = 40;
+    }
+    var  SAMOSA=document.getElementById("checkbox5")
+    if(SAMOSA.checked){
+        item.push(SAMOSA.value)
+        dinnerName = SAMOSA.value;
+                dinnerCost = 20;
+    }
+    var  RICE=document.getElementById("checkbox6")
+    if(RICE.checked){
+        item.push(RICE.value)
+        dinnerName = RICE.value;
+                lunchCost = 30;
+                lunchCost=lunchCost+dinnerCost;
+    }
+    var  DAL=document.getElementById("checkbox7")
+    if(DAL.checked){
+        item.push(DAL.value)
+        dinnerName = DAL.value;
+                lunchCost = 10;
+                lunchCost=lunchCost+dinnerCost;
+
+    }
+    var  CURRY=document.getElementById("checkbox8")
+    if(CURRY.checked){
+        item.push(CURRY.value)
+        dinnerName = CURRY.value;
+                lunchCost = 30;
+                lunchCost=lunchCost+dinnerCost;
+
+    }
+    var  BIRIYANI=document.getElementById("checkbox9")
+    if(BIRIYANI.checked){
+        item.push(BIRIYANI.value)
+        dinnerName = BIRIYANI.value;
+                lunchCost = 100;
+                lunchCost=lunchCost+dinnerCost;
+
+    }
+    var  PAMPADA=document.getElementById("checkboxa")
+    if(PAMPADA.checked){
+        item.push(PAMPADA.value)
+        dinnerName = PAMPADA.value;
+                lunchCost = 5;
+                lunchCost=lunchCost+dinnerCost;
+
+    }
+    var  COLDRINKS=document.getElementById("checkboxb")
+    if(COLDRINKS.checked){
+        item.push(COLDRINKS.value)
+        dinnerName = COLDRINKS.value;
+                dinnerCost = 0;
+    }
+    var  LASSI=document.getElementById("checkboxc")
+    if(LASSI.checked){
+        item.push(LASSI.value)
+        dinnerName = LASSI.value;
+                dinnerCost = 0;
+    }
+    document.getElementById("box4").innerHTML = "Total cost :" + "&#8377;" + lunchCost + "/-";
+
+    
+    if(item.length>0){
+        document.getElementById("box4").innerHTML=item;
+
+    }
+    else{
+        document.getElementById("p1").innerHTML="you have dont anything"
+    }
+    function clear(){
+document.getElementById("box4").reset();
+    }
+
+}
+// var mylist=document.getElementById("myList");
+// document.getElementById("item").value=mylist
+
+
+
+</script>
+<body>
+    <table>
+<div>
+    <div id="box1">
+        <input type="checkbox" id="checkbox1" name="lunch" value="PIZA"> PIZA<br>
+        <input type="checkbox"  id="checkbox2" name="lunch" value="BURGER"> BURGER<br>
+
+        <input type="checkbox"  id="checkbox3" name="lunch" value="ROLE"> ROLE<br>
+
+        <input type="checkbox"id="checkbox4" name="lunch" value="MAGGI"> MAGGI<br>
+
+        <input type="checkbox"  id="checkbox5" name="lunch" value="SAMOSA"> SAMOSA
+
+            </div>
+    <div id="box2"> 
+        <input type="checkbox"   id="checkbox6" name="lunch" value="RICE"> RICE<br>
+        <input type="checkbox"   id="checkbox7"name="lunch" value="DAL"> DAL<br>
+
+        <input type="checkbox" id="checkbox8" name="lunch" value="CURRY"> CURRY<br>
+
+        <input type="checkbox"   id="checkbox9" name="lunch" value="BIRIYANI"> BIRIYANI<br>
+
+        <input type="checkbox"    id="checkboxa"name="lunch" value="PAMPADA"> PAMOADA
+</div>
+    <div id="box3">
+        <input type="checkbox"   id="checkboxb"name="lunch" value="COLDRINKS"> COLDRINKS<br>
+        <input type="checkbox"  id="checkboxc" name="lunch" value="LASSI"> LASSI<br>
+
+       
+    </div>
+    <div id="box4">
+      
+        </div>
+        <button id="btn" onclick="getValue()">Total Cost</button>
+<button   onclick="clear()">Clear </button>
+<p id="p1"></p>
+</div>
+   </table>
+</body>
+</html> 
